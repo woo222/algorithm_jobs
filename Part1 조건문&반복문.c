@@ -64,5 +64,33 @@ int main() {
     printf("same\n");
   }
   
+  
+  // 5. 반복문
+  // while 문
+  int cnt = 0;
+  
+  while(cnt<10) {
+    printf("Hello World\n");
+    cnt++;
+  }
+  
+  // for 문
+  for (int i=0; i<10; i++){
+    printf("Hello World\n");
+  }
+  
+  // 1~n 합 구하기
+  int n;
+  int sum=0;
+  
+  scanf("%d", &n);
+  
+  for (int i=1; i<=n; i++){
+    printf("i : %d\n", i);
+    sum = sum + i;
+  }
+  
+  printf("%d\n", sum);
+  
   return 0; // 프로그램 정상종료
 }
