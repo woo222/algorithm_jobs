@@ -36,5 +36,33 @@ int main() {
   printf("%lf\n", average); // 실수 하나 출력 lf
   
   
+  // 3. 입력
+  // 계산기
+  int first, second;
+  
+  scanf("%d %d", &first, &second);
+  
+  printf("%d + %d : %d\n", first, second, first+second);
+  printf("%d - %d : %d\n", first, second, first-second);
+  printf("%d * %d : %d\n", first, second, first*second);
+  printf("%d / %d : %.2lf\n", first, second, (double)first/second); // .2lf - 소수점 둘째 자리까지 출력
+  printf("%d %% %d : %d\n", first, second, first%second);
+  
+  
+  // 4. 조건문
+  // 큰 수 출력
+  int first, second;
+  scanf("%d %d", &first, &second);
+  
+  if(first > second) {
+    printf("%d\n", first);
+  }
+  else if (first < second) {
+    printf("%d\n", second);
+  }
+  else {
+    printf("same\n");
+  }
+  
   return 0; // 프로그램 정상종료
 }
