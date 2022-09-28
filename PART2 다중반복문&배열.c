@@ -34,6 +34,25 @@ int main() {
     printf("%d ", data[i]);
   }
   
+  // 최댓값 구하기
+  int n;
+  int data[100];
+  
+  scanf("%d", &n);
+  
+  for (int i=0; i<n; i++){
+    scanf("%d", &data[i]);
+  }
+  
+  int myMax = data[0];
+  
+  for (int i=1; i<n; i++){
+    if (myMax < data[i]){
+      myMax = data[i];
+    }
+  }
+  
+  printf("%d", myMax);
   
   return 0;
 }
