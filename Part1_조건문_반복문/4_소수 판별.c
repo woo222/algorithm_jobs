@@ -38,3 +38,16 @@ int main() {
   }
   */
 }
+
+
+/*
+파이썬
+n = int(input())
+a = "YES"
+for i in range(2, n):
+  if(n%i == 0):
+    a = "NO"
+    break
+
+print(a)
+*/
